@@ -38,7 +38,7 @@
                 $_SESSION['prenom'] = $usersInfos['prenom'];
                 $_SESSION['pseudo'] = $usersInfos['pseudo'];
 
-                header("Location: indexx.php");
+                header("Location: liste_blog.php");
 
             }
             else
