@@ -4,9 +4,8 @@
 
 <?php include 'includes/head.php'; ?>
 
-</head>
-
 <body>
+<?php include 'includes/navbar.php'; ?>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
