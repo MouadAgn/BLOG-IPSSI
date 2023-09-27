@@ -1,28 +1,32 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="./index.php">&nbsp;&nbsp;CODE Forum</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.php">The questions</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="./myquestion.php">Check My Questions</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="publish-question.php">Publier une question</a>
-      </li> 
-      <li class="nav-item">
-        <a class="nav-link" href="actions/users/logoutAction.php">LogOut</a>
-      </li> 
-    </ul>    
-  </div>
-</nav>
-
-
-
-
-
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MyBlog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Blogs</a>
+                </li>
+                <li>
+                    <a class="nav-link active" aria-current="page" href="#">Mes Blogs</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Profil
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Inscription</a></li>
+                    <li><a class="dropdown-item" href="#">Connexion</a></li>
+                </ul>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            </div>
+        </div>
+    </nav>
+    
