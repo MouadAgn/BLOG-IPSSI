@@ -16,24 +16,6 @@
             <div class="col-md-12">
                 <h1>Saisie d'article</h1>
                 <hr>
-                <?php
-                if (isset($_POST['content'])) {
-                    $editor_data = $_POST['content'];
-                    // Create connection
-                    $conn = new ("localhost", "root", "", "blog_ipssi");
-                    // Check connection
-                    if ($conn->connect_error) {
-                        die("Connection failed: " . $conn->connect_error);
-                    }
-                    $sql = "INSERT INTO contenue (content) VALUES ('$editor_data')";
-                    if ($conn->query($sql) === TRUE) {
-                        echo "New record created successfully";
-                    } else {
-                        echo "Error: " . $sql . "<br>" . $conn->error;
-                    }
-                    $conn->close();
-                }
-                ?>
                 <form action="" method="post">
                     <div class="form-group row">
                         <div class="col-md-12">
