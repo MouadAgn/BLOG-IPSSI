@@ -4,8 +4,9 @@
             require ('actions/database.php');
 
             $user_id = $_SESSION['id'];
-            $articles_user = $bdd->prepare("SELECT COUNT(*) as total, titre, contenue from article WHERE id_user = ?");
+            $articles_user = $bdd->prepare("SELECT titre, contenue from article WHERE id_user = ?");
             $articles_user->execute(array($user_id));
-            return $articles_user->fetchAll();
+            return $articles_user;
+            
     }
 ?>
