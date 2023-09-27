@@ -4,8 +4,6 @@
 
 <?php include 'includes/head.php'; ?>
 
-</head>
-
 <body>
 <?php include 'includes/navbar.php'; ?>
     <div class="container">
