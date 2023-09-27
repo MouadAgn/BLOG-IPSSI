@@ -31,10 +31,10 @@
             <label for="exampleInputPassword1" class="form-label">Password</label>
             <input type="password" class="form-control" name="mdp">
         </div>
-        <button type="submit" class="btn btn-primary" name="save_new_article">S'inscrire</button>
+        <button type="submit" class="btn btn-primary" name="validate">S'inscrire</button>
         <br><br>
         <a href="login.php"><p>J'ai déja un compte, je me connecte</p></a>
     </form>
     
 </body>
-</html>
+</html> 
