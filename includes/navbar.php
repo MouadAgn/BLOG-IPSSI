@@ -10,7 +10,7 @@
         <a class="nav-link" href="index.php">The questions</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="./myquestion.php">Check My Questions</a>
+        <a class="nav-link" href="./myArticles.php">Check My Articles</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="publish-question.php">Publier une question</a>
