@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.2/classic/ckeditor.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
 </head>
@@ -17,20 +16,40 @@
             <div class="col-md-12">
                 <h1>Saisie d'article</h1>
                 <hr>
+                <?php
+                if (isset($_POST['content'])) {
+                    $editor_data = $_POST['content'];
+                    // Create connection
+                    $conn = new ("localhost", "root", "", "blog_ipssi");
+                    // Check connection
+                    if ($conn->connect_error) {
+                        die("Connection failed: " . $conn->connect_error);
+                    }
+                    $sql = "INSERT INTO contenue (content) VALUES ('$editor_data')";
+                    if ($conn->query($sql) === TRUE) {
+                        echo "New record created successfully";
+                    } else {
+                        echo "Error: " . $sql . "<br>" . $conn->error;
+                    }
+                    $conn->close();
+                }
+                ?>
                 <form action="" method="post">
                     <div class="form-group row">
-                        <label class="col-md-4">Contenu</label>
-                        <div class="col-md-8">
-                            <textarea class="form-control" name="editorl" required></textarea>
+                        <div class="col-md-12">
+                            <textarea class="form-control" id="editor" name="content"></textarea>
+                            <script src="./ckeditor/ckeditor.js"></script>
                             <script>
-                                CKEDITOR.replace("editorl");
+                                ClassicEditor
+                                    .create(document.getElementById('editor'))
+                                    .catch(error => {
+                                        console.error(error)
+                                    });
                             </script>
                         </div>
                     </div>
-
                     <div class="form-group row">
-                        <label class="col-md-4"></label>
-                        <div class="col-md-8">
+                        <div class="d-grid gap-2 col-md-8 mt-2">
                             <button class="btn btn-primary" type="submit">Submit</button>
                         </div>
                     </div>
