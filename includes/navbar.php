@@ -15,15 +15,6 @@
                 <li>
                     <a class="nav-link active" aria-current="page" href="blog.php">Ecrire un article</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Profil
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Inscription</a></li>
-                        <li><a class="dropdown-item" href="#">Connexion</a></li>
-                    </ul>
-                </li>
             </ul>
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
