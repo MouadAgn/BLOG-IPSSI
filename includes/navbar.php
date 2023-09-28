@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream
+<?php require('actions/database.php'); ?>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">MyBlog</a>
@@ -11,17 +11,20 @@
                     <a class="nav-link active" aria-current="page" href="liste_blog.php">Articles</a>
                 </li>
                 <li>
-                    <a class="nav-link active" aria-current="page" href="myArticles.php">Mes articles</a>
+                    <a class="nav-link active" aria-current="page" href="myArticles.php">Mes    </a>
                 </li>
                 <li>
                     <a class="nav-link active" aria-current="page" href="blog.php">Ecrire un article</a>
                 </li>
             </ul>
+            <span class="navbar-text mr-3">
+                Hello, <?php echo $_SESSION['pseudo']; ?>
+            </span>
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
             </form>
-            <a class="btn btn-logout" href="actions/logoutAction.php">LogOut</a>
+            <a class="btn btn-danger" href="actions/logoutAction.php">LogOut</a>
 
         </div>
     </div>
