@@ -1,4 +1,6 @@
 <?php require ('actions/articles/saveArticles.php'); ?>
+<?php require('actions/users/SecurityAction.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
