@@ -13,7 +13,7 @@
                     <a class="nav-link active" aria-current="page" href="myArticles.php">Mes Blogs</a>
                 </li>
                 <li>
-                    <a class="nav-link active" aria-current="page" href="blog.php">Ecrire un article</a>
+                    <a class="nav-link active" aria-current="page" href="ecrire_article.php">Ecrire un article</a>
                 </li>
             </ul>
             <form class="d-flex" role="search">

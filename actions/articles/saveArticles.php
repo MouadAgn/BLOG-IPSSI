@@ -1,5 +1,4 @@
-<?php 
-    session_start();
+<?php
     require ('actions/database.php');
 
     // Validate the FORM
@@ -13,11 +12,12 @@
             $title = htmlspecialchars($_POST['title']);
 
                 //Insert the user on the database
-                $InsertUserOnWebsite = $bdd ->prepare('INSERT INTO article(titre, contenue, id_user) VALUES(?, ?, ?)');
-                $InsertUserOnWebsite->execute(array($title, $content, $_SESSION['id']));
+                $savedArticle = $bdd ->prepare('INSERT INTO article(titre, contenue, id_user) VALUES(?, ?, ?)');
+                $savedArticle->execute(array($title, $content, $_SESSION['id']));
 
-                header("Location: blog.php");
+                $id_new_article = $bdd->lastInsertId();
 
+                header("Location:modifier_article.php?id=" . $id_new_article);
             }
         else
         {
