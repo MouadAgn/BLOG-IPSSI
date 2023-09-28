@@ -30,7 +30,7 @@
     <div class="contenue">
         <div class="list-group">
             <?php while ($article = $allArticle->fetch()): ?>
-                <a href="./larticle.php?id=<?= $article['id']?>" class="list-group-item list-group-item-action">
+                <a href="lire_article.php?id=<?php echo $article["id"] ?>" class="list-group-item list-group-item-action">
                     <div class="d-flex w-100 justify-content-between">
                         <h5 class="mb-1"><?= $article['titre'] ?></h5>
                         <small class="text-body-secondary">date</small>
