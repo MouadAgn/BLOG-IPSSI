@@ -1,6 +1,6 @@
 <?php
         function get_user_articles(){
-            session_start();
+            
             require ('actions/database.php');
 
             $user_id = $_SESSION['id'];
