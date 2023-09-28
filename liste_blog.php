@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php require('includes/head.php'); ?>
     <title>Liste des blogs</title>
-
 </head>
 
 <style>
@@ -43,6 +42,6 @@
         </div>
     </div>
 
-
+    
 </body>
 </html>
