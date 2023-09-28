@@ -24,7 +24,7 @@
     }
 </style>
 
-<body class="bg-secondary">
+<body class="background-gradient">
     <?php require('includes/navbar.php'); ?> 
 
     <div class="contenue">

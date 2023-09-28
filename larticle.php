@@ -16,7 +16,7 @@
     <title>Document</title>
     <?php require('includes/head.php'); ?>
 </head>
-<body>
+<body class="background-gradient">
 
 <style>
     .contenue{

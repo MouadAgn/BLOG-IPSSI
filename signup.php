@@ -4,7 +4,7 @@
 
 <?php include 'includes/head.php'; ?>
 
-<body >
+<body class="background-gradient">
 
     <br><br><br>
     <form class="container" method="POST" action="">
