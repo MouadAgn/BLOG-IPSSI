@@ -1,4 +1,5 @@
 <?php require('actions/articles/getArticlesUser.php'); ?>
+<?php require('actions/users/SecurityAction.php'); ?>
 
 <?php $user_articles = get_user_articles()->fetchAll(); ?>
 
