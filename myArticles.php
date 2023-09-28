@@ -17,7 +17,7 @@
                         <div class="card-body">
                             <h5 class="card-title"><?php echo $article["titre"] ?></h5>
                             <p class="card-text"><?php echo substr(strip_tags($article["contenue"]), 0, 100) ?></p>
-                            <a href="#" class="card-link">Lire l'article</a>
+                            <a href="lire_article.php?id=<?php echo $article["id"] ?>" class="card-link">Lire l'article</a>
                             <a href="#" class="card-link">Modifier l'article</a>
                         </div>
                     </div>
