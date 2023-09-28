@@ -37,7 +37,7 @@
                         <small class="text-body-secondary">date</small>
                     </div>
                     <p class="mb-1">description</p>
-                    <small class="text-body-secondary"><?= $article['nom'] ?></small>
+                    <small class="text-body-secondary"><?= $article['pseudo'] ?></small>
                 </a>
             <?php endwhile; ?>
         </div>
