@@ -7,7 +7,7 @@
 <html lang="en">
 <?php include 'includes/head.php'; ?>
 
-<body>
+<body class="bg-secondary">
     <?php include 'includes/navbar.php'; ?>
     <div class="container">
         <div class="row">

@@ -7,11 +7,11 @@ session_start();
 
 <?php include 'includes/head.php'; ?>
 
-<body>
+<body class="bg-secondary">
 <?php include 'includes/navbar.php'; ?>
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 mt-3">
                 <h1>Rédiger un article</h1>
                 <hr>
                 <?php if(isset($error_msg))  {  echo '<p style=color:red;>'.$error_msg.'</p>';   }  ?>
