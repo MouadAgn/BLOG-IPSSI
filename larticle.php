@@ -1,4 +1,5 @@
 <?php
+     require('actions/users/SecurityAction.php');
     require('actions/database.php');
 
     $GetInfosOfThisArticle = $bdd->prepare('SELECT * from article where id = ?');
