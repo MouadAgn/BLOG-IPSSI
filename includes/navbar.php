@@ -11,7 +11,7 @@
                     <a class="nav-link active" aria-current="page" href="liste_blog.php">Articles</a>
                 </li>
                 <li>
-                    <a class="nav-link active" aria-current="page" href="myArticles.php">Mes    </a>
+                    <a class="nav-link active" aria-current="page" href="myArticles.php">Mes articles</a>
                 </li>
                 <li>
                     <a class="nav-link active" aria-current="page" href="blog.php">Ecrire un article</a>
@@ -25,7 +25,5 @@
                 <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
             </form>
             <a class="btn btn-danger" href="actions/logoutAction.php">LogOut</a>
-
-        </div>
     </div>
 </nav>
