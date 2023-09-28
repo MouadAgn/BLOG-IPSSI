@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php require('includes/head.php'); ?>
     <title>Liste des blogs</title>
-
 </head>
 
 <style>
@@ -37,12 +36,12 @@
                         <small class="text-body-secondary">date</small>
                     </div>
                     <p class="mb-1">description</p>
-                    <small class="text-body-secondary"><?= $article['nom'] ?></small>
+                    <small class="text-body-secondary"><?= $article['pseudo'] ?></small>
                 </a>
             <?php endwhile; ?>
         </div>
     </div>
 
-
+    
 </body>
 </html>
