@@ -7,7 +7,7 @@ session_start();
 
 <?php include 'includes/head.php'; ?>
 
-<body class="bg-secondary">
+<body class="background-gradient">
 <?php include 'includes/navbar.php'; ?>
     <div class="container">
         <div class="row">

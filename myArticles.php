@@ -7,7 +7,7 @@
 <html lang="en">
 <?php include 'includes/head.php'; ?>
 
-<body class="bg-secondary">
+<body class="background-gradient">
     <?php include 'includes/navbar.php'; ?>
     <div class="container">
         <div class="row">
@@ -25,7 +25,7 @@
                 <?php }
             } else { ?>
                 <p class="fs-1">Vous n'avez écrit aucun article</p>
-                <a href="blog.php">Ecrire un article</a>
+                <a href="ecrire_article.php">Ecrire un article</a>
             <?php } ?>
         </div>
     </div>
