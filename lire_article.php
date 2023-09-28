@@ -1,4 +1,5 @@
 <?php require('actions/articles/get_the_article.php'); ?>
+<?php require('actions/users/SecurityAction.php'); ?>
 <?php $article = get_article_by_id($_GET["id"]); ?>
 
 <!DOCTYPE html>
