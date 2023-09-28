@@ -28,13 +28,13 @@
     <div class="contenue">
         <div class="list-group">
             <?php while ($article = $allArticle->fetch()): ?>
-                <a href="#" class="list-group-item list-group-item-action">
+                <a href="./larticle.php?id=<?= $article['id']?>" class="list-group-item list-group-item-action">
                     <div class="d-flex w-100 justify-content-between">
                         <h5 class="mb-1"><?= $article['titre'] ?></h5>
                         <small class="text-body-secondary">date</small>
                     </div>
                     <p class="mb-1">description</p>
-                    <small class="text-body-secondary"><?= $article['nom'] ?></small>
+                    <small class="text-body-secondary"><?= $article['pseudo'] ?></small>
                 </a>
             <?php endwhile; ?>
         </div>
