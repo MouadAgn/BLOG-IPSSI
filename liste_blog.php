@@ -1,12 +1,14 @@
+<?php require('actions/users/SecurityAction.php'); ?>
+<?php require('actions/articles/getAllArticle.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
-<?php require('actions/articles/getAllArticle.php'); ?>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php require('includes/head.php'); ?>
     <title>Liste des blogs</title>
-    
 </head>
 
 <style>

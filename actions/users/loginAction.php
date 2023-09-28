@@ -46,7 +46,7 @@
                             text: "Welcome <?php echo $_SESSION['pseudo']; ?>",
                             icon: "success",
                         }).then(function() {
-                            window.location = "./liste_blog.php";
+                            window.location = "liste_blog.php";
                         });
                     </script>
                     
