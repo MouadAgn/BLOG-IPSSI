@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php include('includes/head.php'); ?>
-<body class="background-gradient">
+<body class="bg-secondary">
 
 <br><br><br>
     <form class="container" method="POST" action="">

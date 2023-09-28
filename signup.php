@@ -4,7 +4,7 @@
 
 <?php include 'includes/head.php'; ?>
 
-<body class="background-gradient">
+<body class="bg-secondary">
 
     <br><br><br>
     <form class="container" method="POST" action="">
@@ -33,7 +33,7 @@
         </div>
         <button type="submit" class="btn btn-primary" name="validate">S'inscrire</button>
         <br><br>
-        <a href="login.php"><p>J'ai déja un compte, je me connecte</p></a>
+        <a href="index.php"><p>J'ai déja un compte, je me connecte</p></a>
     </form>
     
 </body>

@@ -14,7 +14,7 @@ $article = get_article_by_id($_GET["id"]);
 } else {
     include 'includes/head.php';
 ?>
-    <body class="background-gradient">
+    <body class="bg-secondary">
         <?php include 'includes/navbar.php'; ?>
         <div class="container">
             <div class="row">
