@@ -1,6 +1,6 @@
 <?php
     require ('actions/database.php');
-    session_start();
+    
     // Validate the FORM
     if(isset($_POST['save_article']))
     {
