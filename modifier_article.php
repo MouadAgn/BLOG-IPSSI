@@ -2,6 +2,7 @@
 session_start();
 require('actions/articles/update_article.php');
 require('actions/articles/get_the_article.php');
+require('actions/articles/deleteArticleById.php');
 
 $article = get_article_by_id($_GET["id"]);
 ?>
@@ -46,6 +47,7 @@ $article = get_article_by_id($_GET["id"]);
                         <div class="form-group row">
                             <div class="d-grid gap-2 col-md-12 mt-2">
                                 <button class="btn btn-primary" type="submit" name="update_article">Submit</button>
+                                <button class="btn btn-danger" type="submit" name="delete_article">Delete</button>
                             </div>
                         </div>
                     </form>
