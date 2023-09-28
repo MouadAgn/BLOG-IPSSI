@@ -15,7 +15,7 @@
             <a class="nav-link active" aria-current="page" href="myArticles.php">Mes articles</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="blog.php">Ecrire un article</a>
+            <a class="nav-link active" aria-current="page" href="ecrire_article.php">Ecrire un article</a>
         </li>
     </ul>
     <!-- Ajout de 'mr-4' pour espacer -->
